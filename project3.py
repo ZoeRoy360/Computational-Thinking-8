@@ -23,7 +23,7 @@ t4 = create_sprite("dog4",x4,y4)
 
 # # Section 3 - Racing
 # # TODO - set how much each variable changes by and increase the number of repeats to at least 30
-# # TODO - explain here which sprites are faster or slower
+# # TODO - explain here which sprites are faster or slower: It is random who wins because they all pick a random number in the same range
 for i in range(30):
     x1 += random.randint(50,100)
     x2 += random.randint(50,100)
@@ -42,11 +42,14 @@ for i in range(30):
 # Section 4 - Winner
 # TODO - complete the elif for player 2 winning
 # TODO - write another elif for player 3 and player 4
-s5 = create_sprite("alien",-200,-200)
+s5 = create_sprite("flower",0,0)
 if x1 >= x2 and x1 >= x3 and x1 >= x4:
     s5.write("Player 1 wins!")
-elif
+elif x2 >= x1 and x2 >= x3 and x2 >= x4:
     s5.write("player 2 wins!")
-
+elif x3 >= x2 and x3 >= x1 and x3 >= x4:
+    s5.write("player 3 wins!")
+elif x4 >= x2 and x4 >= x1 and x4 >= x3:
+    s5.write("player 4 wins!")
 
 turtle.exitonclick()

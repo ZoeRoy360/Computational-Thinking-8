@@ -36,8 +36,7 @@ answer3 = input("Would you rather have 1)Magic powers, the ability to 2)Fly or 3
 if answer3 == (1):
     rarity_points += 1
 elif answer3 == (2):
-    fluttershy_points += 1
-    rainbowdash_points += 1
+    fluttershy_points or rainbowdash_points += 1
 elif answer3 == (3):
     pinkiepie_points += 1
     applejack_points += 1
